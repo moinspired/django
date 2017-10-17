@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form action="/result" method="post">
+    {% csrf_token %}
+    First name:<br>
+    <input type="text" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+    <br>
+    Description:<br>
+    <textarea name="desc"></textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+   
+  </form> 
+</body>
+</html>

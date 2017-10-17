@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      {% load static %}
+    </head>
+  <body>
+    {{first}}<br>{{last}}<br>{{desc}}
+    
+  <form action="/summary" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Go Back">
+  </form>
+  </body>
+</html>
+
+
